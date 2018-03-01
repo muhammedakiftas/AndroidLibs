@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:contextClickable="true"
+    cardView:cardCornerRadius="4dp"
+    cardView:cardBackgroundColor="@color/flatui_clouds"
+    android:id="@+id/cv_item">
+<!--
+android:background="?attr/selectableItemBackground"
+
+    android:clickable="false"
+-->
+    <RelativeLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:lines="1"
+            android:text="MESAJLAR"
+            android:textColor="@color/sahibinden_text_blue"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tv_item_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:nestedScrollingEnabled="false"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
